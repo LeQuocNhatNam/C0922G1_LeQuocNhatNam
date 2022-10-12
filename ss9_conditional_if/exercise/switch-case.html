@@ -16,6 +16,7 @@
 <script>
 function countTheDay() {
     let month1 = parseInt(document.getElementById("monthEntered").value) ;
+
     switch (month1) {
         case 1:
         case 3:
@@ -34,6 +35,9 @@ function countTheDay() {
         case 9:
         case 11:
             document.getElementById("month").innerHTML = "Tháng " + month1 + " có 30 ngày";
+
+        default:
+            document.getElementById("month").innerHTML = "Vui lòng nhập lại từ 1 đến 12: ";
     }
 }
 </script>
